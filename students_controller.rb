@@ -12,6 +12,7 @@ end
 
 # new
 get '/hogwarts/new' do
+  @houses = House.all()
   erb(:new)
 end
 
