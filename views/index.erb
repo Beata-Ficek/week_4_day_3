@@ -1,0 +1,7 @@
+<p>All the students:</p>
+
+<% for student in @students %>
+
+  <p><a href = "/hogwarts/<%=student.id%>" ><%= student.first_name() %></a></p>
+
+<% end %>
